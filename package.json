@@ -49,7 +49,6 @@
 		"gulp-prettier": "latest",
 		"gulp-rename": "latest",
 		"gulp-svg-sprite": "latest",
-		"gulp-ttf2woff": "latest",
 		"gulp-ttf2woff2": "latest",
 		"gulp-util": "latest",
 		"gulp-version-number": "latest",
