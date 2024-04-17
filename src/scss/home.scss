@@ -5,8 +5,6 @@
    background-image: url('./../img/bg-home-40.jpg');
    background-size: cover;
    background-position: bottom left;
-   width: 100%;
-   aspect-ratio: 16/9;
    color: $mainBgColor;
 
 	text-transform: uppercase;
@@ -15,10 +13,22 @@
    justify-content: center;
    align-items: center;
 
-   @media (max-width:$mobile) {
+	@media (max-width:$tablet) {
       padding: 120px 0 70px;
-      background-image: url('./../img/bg-home-small.jpg');
+      background-image: url('./../img/bg-home-tablet-40.jpg');		
+		background-position: bottom left;
    }
+
+	@media (max-width:$mobileSmall) {
+		padding: 90px 0 60px;
+		background-image: url('./../img/bg-home-small-40.jpg');
+		background-position: bottom left;
+	}
+
+	@media (max-width: 1024px) and (min-device-aspect-ratio: 1024/600) {
+		height: 800px;
+		background-position: 50% 50%;
+	}
 
    &__container-home {
 		width: 100%;
@@ -26,6 +36,10 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
+
+		@media (max-width:$tablet) {
+         justify-content:space-between;
+      }
    }
 
 /* 	&__name-block {
@@ -38,10 +52,26 @@
 
 	&__left-block {
 		flex: 0 1 60%;
+
+		@media (max-width:$mobile) {
+			flex: 0 1 50%;
+		}
+
+		@media (max-width:$mobileSmall) {
+			display: none;
+		}
 	}
 
 	&__right-block {
 		flex: 0 1 40%;
+
+		@media (max-width:$mobile) {
+			flex: 0 1 50%;
+		}
+
+		@media (max-width:$mobileSmall) {
+			flex: 1 1 100%;
+		}
 	}
 
    &__title {
@@ -57,7 +87,7 @@
 		}
 
       @media (max-width:$pc) {
-         font-size: calc(toRem(50) + 20*((100vw - 320px) / (1200 - 320)));
+         font-size: calc(toRem(40) + 30*((100vw - 320px) / (1200 - 320)));
       }
    }
 
@@ -82,7 +112,7 @@
 		}
 
       @media (max-width:$pc) {
-         font-size: calc(toRem(25) + 15*((100vw - 320px) / (1200 - 320)));
+         font-size: calc(toRem(23) + 17*((100vw - 320px) / (1200 - 320)));
       }
 
       @media (max-width:$tablet) {
@@ -140,12 +170,16 @@
 .list {
    &__item {
       display: flex;
-      margin-bottom: toEm(35, 25);
-
+      margin-bottom: toEm(35, 25);	
 		
 		@media (max-width: 1500px) {
 			margin-bottom: toEm(25, 25);
 		}
+
+		@media (max-width:$mobileSmall) {
+			margin-bottom: toEm(15, 25);
+		}
+
 
       p {
          text-transform: uppercase;
@@ -155,7 +189,7 @@
          text-shadow: 0 0 15px $mainColor;
 
          @media (max-width:$pc) {
-            font-size: calc(toRem(18) + 7*((100vw - 320px) / (1200 - 320)));
+            font-size: calc(toRem(17) + 8*((100vw - 320px) / (1200 - 320)));
          }
       }
    }

@@ -8,7 +8,7 @@
 	<div class="wrapper">
 		@@include('html/_header.htm',{})
 		<main class="page text">
-			<section class="home" data-watch="navigator" data-watch-threshold="0.55">
+			<section class="home" data-watch="navigator" data-watch-threshold="0.45">
 				<div class="home__container-home">
 
 					<div class="home__content">
@@ -20,7 +20,7 @@
 								<h1 class="home__title margin-bottom-10" data-watch data-watch-once>Приглашаем водителей</h1>
 								<p class="home__label" data-watch data-watch-once>категории Е</p>
 							</div>
-							<div class="home__offer-wrap">
+							<div class="home__offer-wrap margin-bottom-40">
 								<ul class="home__list list">
 
 									<li class="list__item margin-bottom-10">
@@ -66,6 +66,139 @@
 					<div class="home__action action">
 						<button class="button offer-button preload" data-popup="#popup-form"
 							aria-label="Кнопка рассчитать стоимость">Узнать больше</button>
+					</div>
+				</div>
+			</section>
+			<section class="prices" id="prices" data-watch="navigator" data-watch-threshold="0.25">
+				<div class="prices__container">
+					<div class="prices__wrapper">
+						<h2 class="prices__title title">Цены</h2>
+						<div class="prices__subtitle-box subtitle-box">
+							<svg class="prices__icons icons-check">
+								<use xlink:href="@img/icons/icons.svg#check"></use>
+							</svg>
+							<h3 class="prices__subtitle subtitle">Перевозка грузов</h3>
+						</div>
+						<div class="prices__grid grid-prices text margin-bottom-40">
+
+							<div data-watch data-watch-once class="grid-prices__item grid-prices__item--1 card">
+								<div class="card__top">
+									<div class="card__img-wrapper">
+										<img class="card__icons" width="67" height="65" data-src="@img/icons/card-icon.png"
+											alt="иконка грузовика">
+									</div>
+									<h4 class="card__title sub-subtitle">Германия-Москва</h4>
+									<p class="card__text">Доставка, оформление документов, отслеживание груза 24/7</p>
+									<p class="card__text">Срок доставки от <strong>5 дней</strong></p>
+								</div>
+								<div class="card__bottom">
+									<div class="card__wrapper-link">
+										<a class="card__link link" href="" data-goto-top="100" data-goto=".europe">Подробнее</a>
+									</div>
+									<p class="card__price"><span class="card__text">от</span> <span
+											class="card__price-color"><strong>4500</strong></span> EUR
+									</p>
+								</div>
+							</div>
+
+							<div data-watch data-watch-once class="grid-prices__item grid-prices__item--2 card">
+								<div class="card__top">
+									<div class="card__img-wrapper">
+										<img class="card__icons" width="67" height="65" data-src="@img/icons/card-icon.png"
+											alt="иконка грузовика">
+									</div>
+									<h4 class="card__title sub-subtitle">Китай (Шанхай)-Москва</h4>
+									<p class="card__text">Доставка, оформление документов, отслеживание груза 24/7</p>
+									<p class="card__text">Срок доставки от <strong>16 дней</strong></p>
+								</div>
+								<div class="card__bottom">
+									<div class="card__wrapper-link">
+										<a class="card__link link" href="" data-goto-top="100" data-goto=".china">Подробнее</a>
+									</div>
+									<p class="card__price"><span class="card__text">от</span> <span
+											class="card__price-color"><strong>9 500</strong></span> USD
+									</p>
+								</div>
+							</div>
+
+							<div data-watch data-watch-once class="grid-prices__item grid-prices__item--3 card">
+								<div class="card__top">
+									<div class="card__img-wrapper">
+										<img class="card__icons" width="67" height="65" data-src="@img/icons/card-icon.png"
+											alt="иконка грузовика">
+									</div>
+									<h4 class="card__title sub-subtitle">Брест (ТЛЦ)-Москва</h4>
+									<p class="card__text">Доставка, отслеживание груза 24/7</p>
+									<p class="card__text">Срок доставки от <strong>2 дней</strong></p>
+								</div>
+								<div class="card__bottom">
+									<div class="card__wrapper-link">
+										<a class="card__link link" href="" data-goto-top="100" data-goto=".tlc">Подробнее</a>
+									</div>
+									<p class="card__price"><span class="card__text">от</span> <span
+											class="card__price-color"><strong>1300</strong></span> EUR
+									</p>
+								</div>
+							</div>
+
+							<div data-watch data-watch-once class="grid-prices__item grid-prices__item--4 card">
+								<div class="card__top">
+									<div class="card__img-wrapper">
+										<img class="card__icons" width="67" height="65" data-src="@img/icons/card-icon.png"
+											alt="иконка грузовика">
+									</div>
+									<h4 class="card__title sub-subtitle">Москва-Екатеринбург</h4>
+									<p class="card__text">Доставка, отслеживание груза 24/7</p>
+									<p class="card__text">Срок доставки от <strong>3 дней</strong></p>
+								</div>
+								<div class="card__bottom">
+									<div class="card__wrapper-link">
+										<a class="card__link link" href="" data-goto-top="100" data-goto=".russia">Подробнее</a>
+									</div>
+									<p class="card__price"><span class="card__text">от</span> <span
+											class="card__price-color"><strong>190 000</strong></span> RUB
+									</p>
+								</div>
+							</div>
+
+						</div>
+						<p class="prices__text margin-bottom-20">Здесь указаны индикативные фрахтовые ставки по нашим основным
+							направлениям автомобильных перевозок грузов. Стоимость
+							перевозки и время доставки груза в первую очередь зависят от маршрута перевозки, веса и количества
+							груза, класса опасности груза, необходимости дополнительного страхования в случае высокой стоимости
+							груза. Все условия
+							перевозок грузов очень разные, как и грузы, которые мы перевозим.</p>
+						<p class="prices__text margin-bottom-20">Информацию о стоимости перевозки груза самолетом (<a
+								class="prices__link link" href="" data-goto-top="100" data-goto=".avia">подробнее</a>) мы можем
+							предоставить по вашему запросу. Чтобы получить наиболее точный расчет, нам необходима детальная
+							информация о вашем грузе. Эти данные позволят нам оценить объем работы, требуемые ресурсы и прочие
+							факторы, которые влияют на стоимость перевозки.</p>
+						<!-- <p class="prices__text margin-bottom-20">Свяжитесь с нами, предоставив все необходимые данные, и мы с
+							удовольствием поможем вам с расчетом стоимости и предложим наилучший вариант перевозки вашего
+							груза.</p> -->
+						<p class="prices__text margin-bottom-60">Для быстрой предварительной оценки стоимости и времени
+							доставки, пожалуйста заполните небольшую форму, нажав на красную кнопку в блоке ниже.</p>
+						<div class="prices__subtitle-box subtitle-box">
+							<svg class="prices__iconsk icons-check">
+								<use xlink:href="@img/icons/icons.svg#check"></use>
+							</svg>
+							<h3 class="prices__subtitle subtitle">таможенное оформление грузов</h3>
+						</div>
+						<p class="prices__text margin-bottom-20">Мы рады оказать помощь в таможенном оформлении груза (<a
+								class="prices__link link" href="" data-goto-top="100" data-goto=".customs">подробнее</a>).
+							Предоставьте упрощенную информацию о грузе, и мы сформируем примерную стоимость наших услуг.</p>
+						<p class="prices__text margin-bottom-20">Чтобы
+							сделать точный расчет стоимости, нам необходима полная информация о грузе. Эти данные
+							помогут нам
+							оценить сложность и объем работы, связанные с таможенным оформлением, а также учесть прочие
+							факторы, влияющие на стоимость, такие как необходимая сертификация, получение разрешений и прочие
+							согласования.</p>
+
+						<!-- <p class="prices__text margin-bottom-20">После получения всех этих данных мы сможем предоставить вам
+							точный расчет стоимости таможенного оформления груза. Наша команда опытных специалистов готова
+							ответить на все ваши вопросы и помочь вам с организацией таможенных процедур.</p> -->
+						<p class="prices__text">Для быстрой предварительной оценки стоимости таможенного оформления,
+							пожалуйста заполните небольшую форму, нажав на красную кнопку в блоке ниже.</p>
 					</div>
 				</div>
 			</section>
