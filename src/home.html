@@ -64,140 +64,147 @@
 						</div>
 					</div>
 					<div class="home__action action">
-						<button class="button offer-button preload" data-popup="#popup-form"
-							aria-label="Кнопка рассчитать стоимость">Узнать больше</button>
+						<a class="button offer-button preload" data-goto-header data-goto=".offer" href="#"
+							aria-label="Узнать больше">Узнать
+							больше</a>
 					</div>
 				</div>
 			</section>
-			<section class="prices" id="prices" data-watch="navigator" data-watch-threshold="0.25">
-				<div class="prices__container">
-					<div class="prices__wrapper">
-						<h2 class="prices__title title">Цены</h2>
-						<div class="prices__subtitle-box subtitle-box">
-							<svg class="prices__icons icons-check">
+			<section class="offer" id="offer" data-watch="navigator" data-watch-threshold="0.25">
+				<div class="offer__container">
+					<div class="offer__wrapper">
+						<h2 class="offer__title title">Мы предлагаем</h2>
+						<p class="offer__text margin-bottom-20">
+							Ты ищешь работу в сфере транспорта, где каждый сотрудник ценится и важен? Хочешь ощутить
+							истинное семейное и дружеское отношение в коллективе? Мы ищем именно тебя!
+						</p>
+						<p class="offer__text margin-bottom-40">
+							Несмотря на небольшой
+							размер компании, у нас есть большие планы на будущее. Ты можешь стать частью нашего роста и
+							развиваться вместе с нами.
+						</p>
+						<div class="offer__subtitle-box subtitle-box">
+							<svg class="offer__icons icons-check">
 								<use xlink:href="@img/icons/icons.svg#check"></use>
 							</svg>
-							<h3 class="prices__subtitle subtitle">Перевозка грузов</h3>
+							<h3 class="offer__subtitle subtitle">Как у нас всё устроено</h3>
 						</div>
-						<div class="prices__grid grid-prices text margin-bottom-40">
+						<div class="offer__grid grid-offer text margin-bottom-50">
 
-							<div data-watch data-watch-once class="grid-prices__item grid-prices__item--1 card">
+							<div data-watch data-watch-once class="grid-offer__item grid-offer__item--1 card">
 								<div class="card__top">
 									<div class="card__img-wrapper">
 										<img class="card__icons" width="67" height="65" data-src="@img/icons/card-icon.png"
 											alt="иконка грузовика">
 									</div>
-									<h4 class="card__title sub-subtitle">Германия-Москва</h4>
-									<p class="card__text">Доставка, оформление документов, отслеживание груза 24/7</p>
-									<p class="card__text">Срок доставки от <strong>5 дней</strong></p>
-								</div>
-								<div class="card__bottom">
-									<div class="card__wrapper-link">
-										<a class="card__link link" href="" data-goto-top="100" data-goto=".europe">Подробнее</a>
-									</div>
-									<p class="card__price"><span class="card__text">от</span> <span
-											class="card__price-color"><strong>4500</strong></span> EUR
-									</p>
+									<h4 class="card__title sub-subtitle">Заработная плата 173.000 - 231.000 рублей</h4>
+									<ul class="card__list">
+										<li class="card__text">Размер заработной платы зависит от пройденного расстояния,
+											количества
+											точек погрузки и разгрузки.</li>
+										<li class="card__text">Растентовки оплачиваются отдельно.</li>
+										<li class="card__text">Выплата заработной платы два раза в месяц.</li>
+									</ul>
 								</div>
 							</div>
 
-							<div data-watch data-watch-once class="grid-prices__item grid-prices__item--2 card">
+							<div data-watch data-watch-once class="grid-offer__item grid-offer__item--2 card">
 								<div class="card__top">
 									<div class="card__img-wrapper">
 										<img class="card__icons" width="67" height="65" data-src="@img/icons/card-icon.png"
 											alt="иконка грузовика">
 									</div>
-									<h4 class="card__title sub-subtitle">Китай (Шанхай)-Москва</h4>
-									<p class="card__text">Доставка, оформление документов, отслеживание груза 24/7</p>
-									<p class="card__text">Срок доставки от <strong>16 дней</strong></p>
-								</div>
-								<div class="card__bottom">
-									<div class="card__wrapper-link">
-										<a class="card__link link" href="" data-goto-top="100" data-goto=".china">Подробнее</a>
-									</div>
-									<p class="card__price"><span class="card__text">от</span> <span
-											class="card__price-color"><strong>9 500</strong></span> USD
-									</p>
+									<h4 class="card__title sub-subtitle">Поддержка в пути</h4>
+									<ul class="card__list">
+										<li class="card__text">Дорожная сеть: стоянки, лёгкий ремонт, мойки ТС, шиномонтаж,
+											душевые.</li>
+										<li class="card__text">Питание в сети столовых (за счет компании).</li>
+										<li class="card__text">Заправка по топливным картам.</li>
+										<li class="card__text">Ремонт ТС без участия водителя.</li>
+										<li class="card__text">Сопровождение диспетчера 24/7.</li>
+									</ul>
 								</div>
 							</div>
 
-							<div data-watch data-watch-once class="grid-prices__item grid-prices__item--3 card">
+							<div data-watch data-watch-once class="grid-offer__item grid-offer__item--3 card">
 								<div class="card__top">
 									<div class="card__img-wrapper">
 										<img class="card__icons" width="67" height="65" data-src="@img/icons/card-icon.png"
 											alt="иконка грузовика">
 									</div>
-									<h4 class="card__title sub-subtitle">Брест (ТЛЦ)-Москва</h4>
-									<p class="card__text">Доставка, отслеживание груза 24/7</p>
-									<p class="card__text">Срок доставки от <strong>2 дней</strong></p>
-								</div>
-								<div class="card__bottom">
-									<div class="card__wrapper-link">
-										<a class="card__link link" href="" data-goto-top="100" data-goto=".tlc">Подробнее</a>
-									</div>
-									<p class="card__price"><span class="card__text">от</span> <span
-											class="card__price-color"><strong>1300</strong></span> EUR
-									</p>
+									<h4 class="card__title sub-subtitle">Тягачи Mercedes и Foton Евро 5, 6</h4>
+									<ul class="card__list">
+										<li class="card__text">Шторные полуприцепы.</li>
+										<li class="card__text">В нашем парке 13 автопоездов.</li>
+										<li class="card__text">ТО и ремонт подвижного состава производтся на специализированных
+											СТО.</li>
+										<li class="card__text">Небольшой дружный коллектив водителей, доверительные отношения с
+											коллегами и с руководством.</li>
+									</ul>
 								</div>
 							</div>
 
-							<div data-watch data-watch-once class="grid-prices__item grid-prices__item--4 card">
+							<div data-watch data-watch-once class="grid-offer__item grid-offer__item--4 card">
 								<div class="card__top">
 									<div class="card__img-wrapper">
 										<img class="card__icons" width="67" height="65" data-src="@img/icons/card-icon.png"
 											alt="иконка грузовика">
 									</div>
-									<h4 class="card__title sub-subtitle">Москва-Екатеринбург</h4>
-									<p class="card__text">Доставка, отслеживание груза 24/7</p>
-									<p class="card__text">Срок доставки от <strong>3 дней</strong></p>
-								</div>
-								<div class="card__bottom">
-									<div class="card__wrapper-link">
-										<a class="card__link link" href="" data-goto-top="100" data-goto=".russia">Подробнее</a>
-									</div>
-									<p class="card__price"><span class="card__text">от</span> <span
-											class="card__price-color"><strong>190 000</strong></span> RUB
-									</p>
+									<h4 class="card__title sub-subtitle">Преимущества официального трудоустройства</h4>
+									<ul class="card__list">
+										<li class="card__text">Оформление по ТК РФ и соблюдение РТО.</li>
+										<li class="card__text">Корпоративная сотовая связь.</li>
+										<li class="card__text">Зимняя фирменная экипировка.</li>
+										<li class="card__text">Программа повышения квалификации и обучение за счет компании.</li>
+									</ul>
 								</div>
 							</div>
-
 						</div>
-						<p class="prices__text margin-bottom-20">Здесь указаны индикативные фрахтовые ставки по нашим основным
-							направлениям автомобильных перевозок грузов. Стоимость
-							перевозки и время доставки груза в первую очередь зависят от маршрута перевозки, веса и количества
-							груза, класса опасности груза, необходимости дополнительного страхования в случае высокой стоимости
-							груза. Все условия
-							перевозок грузов очень разные, как и грузы, которые мы перевозим.</p>
-						<p class="prices__text margin-bottom-20">Информацию о стоимости перевозки груза самолетом (<a
-								class="prices__link link" href="" data-goto-top="100" data-goto=".avia">подробнее</a>) мы можем
-							предоставить по вашему запросу. Чтобы получить наиболее точный расчет, нам необходима детальная
-							информация о вашем грузе. Эти данные позволят нам оценить объем работы, требуемые ресурсы и прочие
-							факторы, которые влияют на стоимость перевозки.</p>
-						<!-- <p class="prices__text margin-bottom-20">Свяжитесь с нами, предоставив все необходимые данные, и мы с
-							удовольствием поможем вам с расчетом стоимости и предложим наилучший вариант перевозки вашего
-							груза.</p> -->
-						<p class="prices__text margin-bottom-60">Для быстрой предварительной оценки стоимости и времени
-							доставки, пожалуйста заполните небольшую форму, нажав на красную кнопку в блоке ниже.</p>
-						<div class="prices__subtitle-box subtitle-box">
-							<svg class="prices__iconsk icons-check">
+						<div class="offer__subtitle-box subtitle-box">
+							<svg class="offer__iconsk icons-check">
 								<use xlink:href="@img/icons/icons.svg#check"></use>
 							</svg>
-							<h3 class="prices__subtitle subtitle">таможенное оформление грузов</h3>
+							<h3 class="offer__subtitle subtitle">Небольшая компания, большая забота</h3>
 						</div>
-						<p class="prices__text margin-bottom-20">Мы рады оказать помощь в таможенном оформлении груза (<a
-								class="prices__link link" href="" data-goto-top="100" data-goto=".customs">подробнее</a>).
+						<div class="offer__content margin-bottom-50">
+							<ul class="offer__list list-offer">
+								<li class="list-offer__item">Конкурентная заработная плата и своевременная выплата зарплаты. Мы
+									ценим твой труд и стараемся обеспечить достойное вознаграждение.</li>
+								<li class="list-offer__item">Возможность гибкого графика работы, который учитывает твои личные
+									обстоятельства.</li>
+								<li class="list-offer__item">У нас каждый сотрудник - ценный член нашей команды. Мы заботимся о
+									тебе и твоих потребностях, учитываем твои мнения и предложения.</li>
+								<li class="list-offer__item">Мы всегда готовы выслушать тебя и поддержать в сложных ситуациях.
+									Твой комфорт и благополучие для нас приоритет.</li>
+								<li class="list-offer__item">Наш коллектив - настоящая семья. Мы поддерживаем дружеские
+									отношения между сотрудниками и ценим взаимопонимание.</li>
+								<li class="list-offer__item">Делись опытом и получай поддержку от опытных коллег.
+									Вместе мы сильнее!</li>
+								<li class="list-offer__item">Мы ценим инициативу и предлагаем возможность вносить свой вклад в
+									улучшение нашей компании.</li>
+							</ul>
+						</div>
+
+						<div class="offer__subtitle-box subtitle-box">
+							<svg class="offer__iconsk icons-check">
+								<use xlink:href="@img/icons/icons.svg#check"></use>
+							</svg>
+							<h3 class="offer__subtitle subtitle">Как проходит набор в нашу команду водителей</h3>
+						</div>
+						<p class="offer__text margin-bottom-20">Мы рады оказать помощь в таможенном оформлении груза (<a
+								class="offer__link link" href="" data-goto-top="100" data-goto=".customs">подробнее</a>).
 							Предоставьте упрощенную информацию о грузе, и мы сформируем примерную стоимость наших услуг.</p>
-						<p class="prices__text margin-bottom-20">Чтобы
+						<p class="offer__text margin-bottom-20">Чтобы
 							сделать точный расчет стоимости, нам необходима полная информация о грузе. Эти данные
 							помогут нам
 							оценить сложность и объем работы, связанные с таможенным оформлением, а также учесть прочие
 							факторы, влияющие на стоимость, такие как необходимая сертификация, получение разрешений и прочие
 							согласования.</p>
 
-						<!-- <p class="prices__text margin-bottom-20">После получения всех этих данных мы сможем предоставить вам
+						<!-- <p class="offer__text margin-bottom-20">После получения всех этих данных мы сможем предоставить вам
 							точный расчет стоимости таможенного оформления груза. Наша команда опытных специалистов готова
 							ответить на все ваши вопросы и помочь вам с организацией таможенных процедур.</p> -->
-						<p class="prices__text">Для быстрой предварительной оценки стоимости таможенного оформления,
+						<p class="offer__text">Для быстрой предварительной оценки стоимости таможенного оформления,
 							пожалуйста заполните небольшую форму, нажав на красную кнопку в блоке ниже.</p>
 					</div>
 				</div>

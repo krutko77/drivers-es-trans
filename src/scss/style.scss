@@ -148,17 +148,16 @@ body {
 @import "common";
 
 // Підключення стилів окремих блоків
+@import "home";
 @import "header";
 @import "header-back";
-/* @import "action-block"; */
+@import "offer";
 @import "services";
 @import "reviews";
 @import "contact";
 @import "footer";
 
 // Підключення стилів окремих сторінок
-@import "home";
-@import "about";
 @import "thank-you-page";
 @import "error-404";
 /* @import "regulations";

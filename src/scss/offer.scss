@@ -1,5 +1,5 @@
-// prices
-.prices {
+// offer
+.offer {
 
    &__wrapper {
       display: flex;
@@ -12,16 +12,29 @@
       &::after {
          left: 1%;
       }
-   }   
+   }
+
+   &__list {
+      padding-left: toRem(19);
+   }
+
+   &__list li {
+      list-style-type: square;
+      margin-bottom: toEm(10, 20);
+   }
+
+   &__list li::marker {
+      color: $accentColor;
+   }
 }
 
-.grid-prices {
+.grid-offer {
    display: grid;
    grid-template-columns: 1fr 1fr 1fr 1fr;
-   gap: 40px;
+   gap: 30px;
 
    @media (max-width: $pc) {
-      gap: calc(20px + 20*((100vw - 992px) / (1260 - 992)));
+      gap: calc(20px + 10*((100vw - 992px) / (1260 - 992)));
    }
 
    @media (max-width:$tablet) {
@@ -66,9 +79,9 @@
    flex-direction: column;
    justify-content: space-between;
    background-color: $mainLightColor;
-   min-height: 290px;
    padding: toEm(30, 20) toEm(30, 20);
    border-radius: 5px;
+	min-height: toRem(400);
 
    @media (any-hover: hover) {
       opacity: 0;
@@ -76,10 +89,10 @@
    }
 
    &__img-wrapper {
-		width: fit-content;      
-		aspect-ratio: 67/65;
-		overflow: hidden;
-		margin-bottom: toEm(15, 20);
+      width: fit-content;
+      aspect-ratio: 67/65;
+      overflow: hidden;
+      margin-bottom: toEm(15, 20);
    }
 
    &__icons {
@@ -88,7 +101,19 @@
    }
 
    &__title {
-      margin-bottom: toEm(5, 20);
+      margin-bottom: toEm(15, 20);
+   }
+
+   &__list {
+      padding-left: toRem(19);
+   }
+
+   &__list li {
+      list-style-type: disc;
+   }
+
+   &__list li::marker {
+      color: $accentColor;
    }
 
    &__text,
