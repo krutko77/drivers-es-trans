@@ -26,6 +26,18 @@
    &__list li::marker {
       color: $accentColor;
    }
+
+   &__img-box {
+      max-width: 300px;
+      aspect-ratio: 300/533;
+      overflow: hidden;
+   }
+
+   &__img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+   }
 }
 
 .grid-offer {
@@ -34,17 +46,15 @@
    gap: 30px;
 
    @media (max-width: $pc) {
-      gap: calc(20px + 10*((100vw - 992px) / (1260 - 992)));
+      grid-template-columns: 1fr 1fr;
    }
 
    @media (max-width:$tablet) {
-      grid-template-columns: 1fr 1fr;
-      gap: 30px;
+      gap: 20px;
    }
 
-   @media (max-width:$mobileSmall) {
+   @media (max-width:$mobile) {
       grid-template-columns: 1fr;
-      gap: 20px;
    }
 
    @media (any-hover: hover) {
@@ -81,7 +91,8 @@
    background-color: $mainLightColor;
    padding: toEm(30, 20) toEm(30, 20);
    border-radius: 5px;
-	min-height: toRem(400);
+   min-height: toRem(400);
+   max-width: toRem(400);
 
    @media (any-hover: hover) {
       opacity: 0;

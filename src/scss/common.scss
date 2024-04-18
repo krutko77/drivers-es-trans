@@ -323,11 +323,11 @@ button:not(.swiper-button-prev, .swiper-button-next, .menu__icon),
    max-width: 300px;
 
    @media (max-width:$pc) {
-      width: 25%;
+      width: 30%;
    }
 
    @media (max-width:$tablet) {
-      width: 30%;
+      width: 40%;
    }
 
    @media (max-width:$mobileSmall) {

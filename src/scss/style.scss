@@ -158,7 +158,8 @@ body {
 @import "footer";
 
 // Підключення стилів окремих сторінок
+@import "contract";
 @import "thank-you-page";
 @import "error-404";
-/* @import "regulations";
-@import "bitrix24"; */
+@import "regulations";
+/* @import "bitrix24"; */
