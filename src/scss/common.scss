@@ -8,14 +8,14 @@ section {
    }
 }
 
-section.action-block {
+/* section.action-block {
    padding: 90px 0 90px;
 
    @media (max-width:1500px) {
       padding-top: calc(50px + 20*((100vw - 320px) / (1500 - 320)));
       padding-bottom: calc(50px + 20*((100vw - 320px) / (1500 - 320)));
    }
-}
+} */
 
 a {
    outline: none;

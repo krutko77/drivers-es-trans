@@ -19,7 +19,7 @@
       }
    }
 
-   &__list-awars,
+/*    &__list-awars,
    &__list-win {
       padding-left: 20px;
    }
@@ -33,7 +33,7 @@
       &__item {
          max-width: 100%;
       }
-   }
+   } */
 
    .garage-list {
       display: flex;
@@ -51,9 +51,11 @@
    }
 }
 
+p.text-right {
+	align-self: flex-end;
+}
 
-
-.about__list-awars li {
+/* .about__list-awars li {
    list-style-type: square;
 }
 
@@ -73,4 +75,4 @@
 .img-width-584 {
    aspect-ratio: 584/400;
    overflow: hidden;
-}
+} */

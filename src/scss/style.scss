@@ -152,10 +152,11 @@ body {
 @import "header";
 @import "header-back";
 @import "offer";
-@import "services";
+@import "about";
 @import "reviews";
 @import "contact";
 @import "footer";
+@import "action-block.scss";
 
 // Підключення стилів окремих сторінок
 @import "contract";
