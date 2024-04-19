@@ -327,7 +327,7 @@ button:not(.swiper-button-prev, .swiper-button-next, .menu__icon),
    }
 
    @media (max-width:$tablet) {
-      width: 40%;
+      width: 35%;
    }
 
    @media (max-width:$mobileSmall) {
@@ -340,11 +340,11 @@ button:not(.swiper-button-prev, .swiper-button-next, .menu__icon),
    max-width: 400px;
 
    @media (max-width:$pc) {
-      width: 30%;
+      width: 40%;
    }
 
    @media (max-width:$tablet) {
-      width: 35%;
+      width: 40%;
    }
 
    @media (max-width:$mobileSmall) {

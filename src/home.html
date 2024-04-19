@@ -21,23 +21,23 @@
 								<p class="home__label" data-watch data-watch-once>категории Е</p>
 							</div>
 							<div class="home__offer-wrap margin-bottom-40">
-								<ul class="home__list list">
+								<ul class="home__list list-home">
 
-									<li class="list__item margin-bottom-10">
+									<li class="list-home__item margin-bottom-10">
 										<svg class="home__icons">
 											<use xlink:href="@img/icons/icons.svg#check"></use>
 										</svg>
 										<p class="list__text">Зарплата 173.000 - 231.000 руб.</p>
 									</li>
 
-									<li class="list__item margin-bottom-10">
+									<li class="list-home__item margin-bottom-10">
 										<svg class="home__icons">
 											<use xlink:href="@img/icons/icons.svg#check"></use>
 										</svg>
 										<p class="list__text">Рейсы по странам ЕАЭС</p>
 									</li>
 
-									<li class="list__item margin-bottom-10">
+									<li class="list-home__item margin-bottom-10">
 										<svg class="home__icons">
 											<use xlink:href="@img/icons/icons.svg#check"></use>
 										</svg>
@@ -45,14 +45,14 @@
 										<p>
 									</li>
 
-									<li class="list__item margin-bottom-10">
+									<li class="list-home__item margin-bottom-10">
 										<svg class="home__icons">
 											<use xlink:href="@img/icons/icons.svg#check"></use>
 										</svg>
 										<p class="list__text">Оформление по ТК РФ</p>
 									</li>
 
-									<li class="list__item margin-bottom-10">
+									<li class="list-home__item margin-bottom-10">
 										<svg class="home__icons">
 											<use xlink:href="@img/icons/icons.svg#check"></use>
 										</svg>
@@ -97,7 +97,7 @@
 										<img class="card__icons" width="67" height="65" data-src="@img/icons/card-icon.png"
 											alt="иконка грузовика">
 									</div>
-									<h4 class="card__title sub-subtitle">Заработная плата 173.000 - 231.000 рублей</h4>
+									<h4 class="card__title">Заработная плата 173.000 - 231.000 рублей</h4>
 									<ul class="card__list">
 										<li class="card__text">Размер заработной платы зависит от пройденного расстояния,
 											количества
@@ -114,7 +114,7 @@
 										<img class="card__icons" width="67" height="65" data-src="@img/icons/card-icon.png"
 											alt="иконка грузовика">
 									</div>
-									<h4 class="card__title sub-subtitle">Поддержка в пути</h4>
+									<h4 class="card__title">Поддержка в пути</h4>
 									<ul class="card__list">
 										<li class="card__text">Дорожная сеть: стоянки, лёгкий ремонт, мойки ТС, шиномонтаж,
 											душевые.</li>
@@ -132,7 +132,7 @@
 										<img class="card__icons" width="67" height="65" data-src="@img/icons/card-icon.png"
 											alt="иконка грузовика">
 									</div>
-									<h4 class="card__title sub-subtitle">Тягачи Mercedes и Foton Евро 5, 6</h4>
+									<h4 class="card__title">Тягачи Mercedes и Foton Евро 5, 6</h4>
 									<ul class="card__list">
 										<li class="card__text">Шторные полуприцепы.</li>
 										<li class="card__text">В нашем парке 13 автопоездов.</li>
@@ -150,7 +150,7 @@
 										<img class="card__icons" width="67" height="65" data-src="@img/icons/card-icon.png"
 											alt="иконка грузовика">
 									</div>
-									<h4 class="card__title sub-subtitle">Преимущества официального трудоустройства</h4>
+									<h4 class="card__title">Преимущества официального трудоустройства</h4>
 									<ul class="card__list">
 										<li class="card__text">Оформление по ТК РФ и соблюдение РТО.</li>
 										<li class="card__text">Корпоративная сотовая связь.</li>
@@ -176,7 +176,8 @@
 									ценим твой труд и стараемся обеспечить достойное вознаграждение.</li>
 								<li class="list-offer__item">Возможность гибкого графика работы, который учитывает твои личные
 									обстоятельства.</li>
-									<li class="list-offer__item">Обучающие программы и тренинги для твоего профессионального роста за счет компании.</li>
+								<li class="list-offer__item">Обучающие программы и тренинги для твоего профессионального роста
+									за счет компании.</li>
 								<li class="list-offer__item">У нас каждый сотрудник - ценный член нашей команды. Мы заботимся о
 									тебе и твоих потребностях, учитываем твои мнения и предложения.</li>
 								<li class="list-offer__item">Мы всегда готовы выслушать тебя и поддержать в сложных ситуациях.
@@ -195,21 +196,125 @@
 							</svg>
 							<h3 class="offer__subtitle subtitle">Как проходит набор в нашу команду водителей</h3>
 						</div>
-						<p class="offer__text margin-bottom-20">Мы рады оказать помощь в таможенном оформлении груза (<a
-								class="offer__link link" href="" data-goto-top="100" data-goto=".customs">подробнее</a>).
-							Предоставьте упрощенную информацию о грузе, и мы сформируем примерную стоимость наших услуг.</p>
-						<p class="offer__text margin-bottom-20">Чтобы
-							сделать точный расчет стоимости, нам необходима полная информация о грузе. Эти данные
-							помогут нам
-							оценить сложность и объем работы, связанные с таможенным оформлением, а также учесть прочие
-							факторы, влияющие на стоимость, такие как необходимая сертификация, получение разрешений и прочие
-							согласования.</p>
+						<div class="clearfix margin-bottom-30">
+							<div class="offer__img-box-2 img-box-400 float-left">
+								<img class="offer__img" data-src="@img/offer-img-3.jpg" width="500" height="225"
+									alt="фото водителей на фоне грузовика">
+							</div>
+							<p class="offer__text margin-bottom-20">ООО "ЕС Транс" приглашает к себе в команду, как опытных
+								водителей со
+								стажем работы более года, так и начинающих водителей с опытом работы до года или совсем без
+								опыта работы.</p>
+							<p class="offer__text margin-bottom-20">Хочешь начать карьеру водителя магистрального автопоезда
+								без опыта работы? Тогда наша компания ищет именно тебя! Присоединяйся к нам и пройди стажировку,
+								чтобы стать опытным водителем!</p>
+							<p class="offer__text
+								">Мы с нетерпением ждем тебя и готовы помочь в развитии твоей профессиональной карьеры!</p>
+						</div>
+						<h4 class="offer__sub-subtitle">Что мы предлагаем:</h4>
+						<ul class="offer__list list-offer margin-bottom-20">
+							<li class="list-offer__item">Стажировка и обучение. Мы предоставляем обширную стажировку, которая
+								поможет тебе освоить все аспекты профессии водителя. Ты будешь работать рядом с опытными
+								профессионалами, которые поделятся своими знаниями и опытом с тобой.</li>
+							<li class="list-offer__item">Внутренний экзамен. После прохождения стажировки тебе предстоит сдать
+								внутренний экзамен в нашей компании. Мы уверены, что с правильной подготовкой и нашей поддержкой
+								ты справишься с ним на отлично!</li>
+							<li class="list-offer__item">Самостоятельный выезд в рейс. После успешного прохождения экзамена ты
+								получишь возможность самостоятельно выезжать в свои первые рейсы. Мы верим в тебя и доверяем
+								твоим навыкам!</li>
+						</ul>
+						<h4 class="offer__sub-subtitle">Что мы ждем от тебя:</h4>
+						<ul class="offer__list list-offer margin-bottom-40">
+							<li class="list-offer__item">Желание учиться. Мы ищем людей, которые готовы развиваться и улучшать
+								свои навыки. Если у тебя есть горячее желание стать профессиональным водителем, мы поможем тебе
+								достичь этой цели.</li>
+							<li class="list-offer__item">Ответственность и надежность. Водительская профессия требует
+								ответственного отношения к работе и безопасности перевозок. Мы ожидаем, что ты будешь выполнять
+								свои обязанности с дисциплиной и надежностью.</li>
+							<li class="list-offer__item">Коммуникабельность и дружелюбие: В нашей компании важно иметь хорошие
+								коммуникативные навыки и умение налаживать отношения с коллегами и клиентами. Мы ценим
+								дружелюбную атмосферу и взаимоуважение.</li>
+						</ul>
+						<div class="offer__grid-2 grid-offer-2 text margin-bottom-30">
 
-						<!-- <p class="offer__text margin-bottom-20">После получения всех этих данных мы сможем предоставить вам
-							точный расчет стоимости таможенного оформления груза. Наша команда опытных специалистов готова
-							ответить на все ваши вопросы и помочь вам с организацией таможенных процедур.</p> -->
-						<p class="offer__text">Для быстрой предварительной оценки стоимости таможенного оформления,
-							пожалуйста заполните небольшую форму, нажав на красную кнопку в блоке ниже.</p>
+							<div data-watch data-watch-once class="grid-offer__item grid-offer__item--1 card">
+								<div class="card__top">
+									<div class="card__img-wrapper">
+										<img class="card__icons" width="64" height="64" data-src="@img/icons/card-icon-2.png"
+											alt="иконка грузовика">
+									</div>
+									<h4 class="card__title">Опытный водитель</h4>
+									<p class="card__text"><strong>Стаж вождения больше года по категории Е</strong></p>
+									<ol class="card__list-2 margin-bottom-40">
+										<li class="card__text">Отправь заявку на вакансию.</li>
+										<li class="card__text">Пройди собеседование.</li>
+										<li class="card__text">Заключи трудовой договор.</li>
+										<li class="card__text">Познакомся с коллективом, получи машину.</li>
+										<li class="card__text">Пройди предрейсовый инструктаж и выезжай в рейс.</li>
+									</ol>
+								</div>
+								<div class="card__bottom">
+									<div class="card__wrapper-link">
+										<button class="button offer-button" data-popup="#popup-form"
+											aria-label="Кнопка вызова формы обратной связи">Хочу в команду</button>
+									</div>
+								</div>
+							</div>
+
+							<div data-watch data-watch-once class="grid-offer__item grid-offer__item--2 card">
+								<div class="card__top">
+									<div class="card__img-wrapper">
+										<img class="card__icons" width="67" height="65" data-src="@img/icons/card-icon-2.png"
+											alt="иконка грузовика">
+									</div>
+									<h4 class="card__title">Начинающий водитель</h4>
+									<p class="card__text"><strong>Стаж вождения от 4-х до 12-ти месяцев по категории Е</strong>
+									</p>
+									<ol class="card__list-2 margin-bottom-40">
+										<li class="card__text">Отправь заявку на вакансию.</li>
+										<li class="card__text">Пройди собеседование.</li>
+										<li class="card__text">Покажи профессиональные навыки инструктору ООО "ЕС Транс".</li>
+										<li class="card__text">Заключи трудовой договор.</li>
+										<li class="card__text">Пройди оплачиваемую стажировку.</li>
+										<li class="card__text">Ввыезжай в самостоятельный рейс.</li>
+									</ol>
+								</div>
+								<div class="card__bottom">
+									<div class="card__wrapper-link">
+										<button class="button offer-button" data-popup="#popup-form"
+											aria-label="Кнопка вызова формы обратной связи">Хочу в команду</button>
+									</div>
+								</div>
+							</div>
+
+							<div data-watch data-watch-once class="grid-offer__item grid-offer__item--3 card">
+								<div class="card__top">
+									<div class="card__img-wrapper">
+										<img class="card__icons" width="64" height="64" data-src="@img/icons/card-icon-2.png"
+											alt="иконка грузовика">
+									</div>
+									<h4 class="card__title">Стажёр</h4>
+									<p class="card__text"><strong>Открыта категория Е, но нет опыта работы по ней</strong></p>
+									<ol class="card__list-2 margin-bottom-40">
+										<li class="card__text">Отправь заявку на вакансию.</li>
+										<li class="card__text">Пройди собеседование.</li>
+										<li class="card__text">Пройди обучение и стажировку.</li>
+										<li class="card__text">Сдай внутренний экзамен по технике вождения инструктору ООО "ЕС Транс".</li>
+										<li class="card__text">Заключи трудовой договор.</li><li class="card__text">Выезжай в самостоятельный рейс.</li>
+									</ol>
+								</div>
+								<div class="card__bottom">
+									<div class="card__wrapper-link">
+										<button class="button offer-button" data-popup="#popup-form"
+											aria-label="Кнопка вызова формы обратной связи">Хочу в команду</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<p class="offer__text margin-bottom-20">При оформлении водителя на работу в ООО "ЕС Транс", мы
+							заключаем трудовой договор. Образец нашего типового трудового договора можно посмтреть (<a
+								class="offer__link link" href="/contract.html">здесь</a>).</p>
+
 					</div>
 				</div>
 			</section>
