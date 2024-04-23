@@ -47,23 +47,34 @@ body::after {
 	align-items: center;
 }
 .popup__content {
+	display: flex;
+	flex-direction: column;
 	visibility: hidden;
 	transform: scale(0);
 	transition: transform 0.3s ease 0s;
-	background-color: #eee;
+	background-color: $mainBgColor;
 	padding: 20px;
 	width: 100%;
-	max-width: 900px;
+	max-width: 500px;
 	border-radius: 20px;
 	.lock & {
 		visibility: visible;
+
+		@media (max-width:$tablet) {
+         max-width: 400px;
+      }
 	}
 }
 .popup__close {
+	align-self: flex-end;
    color: $accentColor;
    transition: color 0.3s ease;
 
    &:hover {
       color: $secondLinkColor;
    }
+}
+.popup__img {
+	width: 100%;
+	object-fit: cover;
 }
