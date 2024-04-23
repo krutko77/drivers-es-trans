@@ -86,7 +86,7 @@ function initSliders() {
 					spaceBetween: 45,
 					autoHeight: true,
 				},
-				768: {
+				730: {
 					slidesPerView: 2,
 				},
 				992: {

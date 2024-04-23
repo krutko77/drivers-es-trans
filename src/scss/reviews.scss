@@ -39,8 +39,8 @@
    &__video-box {
       display: none;
       position: absolute;
-      bottom: -10px;
-      right: 0;
+      bottom: -12px;
+      right: 5px;
       aspect-ratio: 70/35;
       overflow: hidden;
 
@@ -51,12 +51,30 @@
 }
 
 .swiper {
-	&__content {
-		background-color: $mainBgColor;
-		padding: 10px;
-		min-height: toRem(400);
-		/* max-width: toRem(400); */
-	}
+   padding: 0 30px;
+
+   &__content {
+      background-color: $mainBgColor;
+      padding: 15px 10px;
+      min-height: toRem(480);
+      /* max-width: toRem(400); */
+
+      @media (max-width: $pc) {
+         min-height: toRem(420);
+      }
+
+		@media (max-width: $tablet) {
+         min-height: toRem(340);
+      }
+
+		@media (max-width: $mobile) {
+         min-height: toRem(400);
+      }
+
+      @media (max-width: $mobileSmall) {
+         min-height: toRem(420);
+      }
+   }
 }
 
 // Меняем установленные стили стрелок
@@ -67,7 +85,7 @@
 .swiper-button-next,
 .swiper-button-prev {
    position: absolute;
-   top: 41%;
+   top: 50%;
    width: calc(var(--swiper-navigation-size) / 44 * 27);
    height: var(--swiper-navigation-size);
    margin-top: calc(0px - (var(--swiper-navigation-size) / 2));
