@@ -4,7 +4,7 @@
 			<button data-close type="button" class="popup__close">Закрыть</button>
 			<div class="popup__top margin-bottom-20">
 				<div class="popup__img-wrapper margin-bottom-20">
-					<img class="popup__img" src="@img/form-photo.jpg" alt="фото сотрудника ЕС Транс">
+					<img class="popup__img" data-src="@img/form-photo.jpg" width="460" height="330" alt="фото сотрудника ЕС Транс">
 				</div>
 				<p class="popup__text text">
 					Здравствуй, меня зовут Андрей Сибилёв, оставь телефон, я перезвоню и расскажу об условиях и преимуществах работы в ООО "ЕС Транс"
@@ -12,7 +12,7 @@
 			</div>
 			<div class="popup__form">
 				<form class="form__body" id="form" name="myForm" action="files/sendmail/sendmail.php" method="POST"
-					data-dev data-popup-message="#form-message">
+					data-ajax data-popup-message="#form-message">
 					<div class="form__contact-block margin-bottom-30">
 						<div class="form__placeholder-container">
 							<input class="form__input for-clear text" id="name" type="text" name="name" data-validate

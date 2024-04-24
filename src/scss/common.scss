@@ -93,7 +93,7 @@ h4 {
    line-height: 1.5;
 
    @media (max-width:1500px) {
-      font-size: calc(toRem(16) + 2*((100vw - 320px) / (1500 - 320)));
+      font-size: calc(toRem(16) + 4*((100vw - 320px) / (1500 - 320)));
    }
 }
 

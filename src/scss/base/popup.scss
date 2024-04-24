@@ -74,7 +74,14 @@ body::after {
       color: $secondLinkColor;
    }
 }
+.popup__img-wrapper {
+	overflow: hidden;
+	width: 100%;
+	max-width: 460px;
+	aspect-ratio: 460/330;
+}
 .popup__img {
 	width: 100%;
+	height: auto;
 	object-fit: cover;
 }

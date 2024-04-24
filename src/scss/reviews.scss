@@ -75,6 +75,14 @@
          min-height: toRem(420);
       }
    }
+
+	&__text.reviews__text {
+		font-size: toRem(18);
+			
+		@media (max-width:1500px) {
+			font-size: calc(toRem(14) + 4*((100vw - 320px) / (1500 - 320)));
+		}
+	}
 }
 
 // Меняем установленные стили стрелок
