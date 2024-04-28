@@ -3,7 +3,7 @@
 .checkbox {
 	position: relative;
 	&:not(:last-child) {
-		margin-bottom: em(5);
+		margin-bottom: toEm(5);
 	}
 	// .checkbox__input
 	&__input {
