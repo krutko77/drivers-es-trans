@@ -165,6 +165,8 @@
 .social {
    display: flex;
    align-items: center;
+   position: relative;
+   z-index: 10;
 
    &__item {
       margin-right: 20px;
@@ -188,6 +190,12 @@
 
    @media (any-hover: hover) {
       .social__icon:hover {
+         opacity: 1;
+      }
+   }
+
+   @media (any-hover: none) {
+      .social__icon {
          opacity: 1;
       }
    }
