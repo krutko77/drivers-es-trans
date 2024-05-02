@@ -19,21 +19,6 @@
       }
    }
 
-/*    &__list-awars,
-   &__list-win {
-      padding-left: 20px;
-   }
-
-   .flight-list {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      gap: 20px;
-
-      &__item {
-         max-width: 100%;
-      }
-   } */
 
    .garage-list {
       display: flex;
@@ -46,33 +31,24 @@
       }
 
       &__item {
-         max-width: 100%;
+         width: 300px;
+         aspect-ratio: 300/400;
+         overflow: hidden;
+      }
+
+		&__item.img-width-584 {
+			width: 584px;
+         aspect-ratio: 584/400;
+		}
+
+		@media (max-width:$mobileSmall) {
+         &__item, &__item.img-width-584 {
+				max-width: 100%;
+			}
       }
    }
 }
 
 p.text-right {
-	align-self: flex-end;
+   align-self: flex-end;
 }
-
-/* .about__list-awars li {
-   list-style-type: square;
-}
-
-.win-list li {
-   list-style-type: disc;
-}
-
-.flight-list li {
-   list-style-type: none;
-}
-
-.img-width-370 {
-   aspect-ratio: 370/224;
-   overflow: hidden;
-}
-
-.img-width-584 {
-   aspect-ratio: 584/400;
-   overflow: hidden;
-} */

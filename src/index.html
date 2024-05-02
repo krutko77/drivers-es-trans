@@ -68,7 +68,7 @@
 						</div>
 					</div>
 					<div class="home__action action">
-						<a class="button offer-button preload" data-goto-header data-goto=".offer" href="#"
+						<a class="button offer-button preload" id="more-button" data-goto-header data-goto=".offer" href="#"
 							aria-label="Узнать больше">Узнать
 							больше</a>
 					</div>
@@ -226,7 +226,7 @@
 								</div>
 								<div class="card__bottom">
 									<div class="card__wrapper-link">
-										<button class="button offer-button" data-popup="#popup-form"
+										<button class="button offer-button" id="text-action-button" data-popup="#popup-form"
 											aria-label="Кнопка вызова формы обратной связи">Хочу в команду</button>
 									</div>
 								</div>
@@ -252,7 +252,7 @@
 								</div>
 								<div class="card__bottom">
 									<div class="card__wrapper-link">
-										<button class="button offer-button" data-popup="#popup-form"
+										<button class="button offer-button" id="text-action-button" data-popup="#popup-form"
 											aria-label="Кнопка вызова формы обратной связи">Хочу в команду</button>
 									</div>
 								</div>
@@ -278,7 +278,7 @@
 								</div>
 								<div class="card__bottom">
 									<div class="card__wrapper-link">
-										<button class="button offer-button" data-popup="#popup-form"
+										<button class="button offer-button" id="text-action-button" data-popup="#popup-form"
 											aria-label="Кнопка вызова формы обратной связи">Хочу в команду</button>
 									</div>
 								</div>
@@ -438,20 +438,20 @@
 							Тягачи
 							Евро 5 и Евро 6 – Mercedes Actros и Foton.</p>
 						<ul class="about__list-garage garage-list">
-							<li class="garage-list__item img-width-300"><img class="about__img"
+							<li class="garage-list__item"><img class="about__img"
 									data-src="@img/about/about-park-1-300.jpg" alt="грузовая машина ЕС Транс" width="300"
 									height="400">
 							</li>
-							<li class="garage-list__item img-width-300"><img class="about__img"
+							<li class="garage-list__item"><img class="about__img"
 									data-src="@img/about/about-park-2-300.jpg" alt="грузовая машина ЕС Транс" width="300"
 									height="400">
 							</li>
-							<li class="garage-list__item img-width-300"><img class="about__img"
-									data-src="@img/about/about-park-3-300.jpg" alt="грузовая машина ЕС Транс" width="300"
+							<li class="garage-list__item"><img class="about__img"
+									src="@img/about/about-park-3-300.jpg" alt="грузовая машина ЕС Транс" width="300"
 									height="400">
 							</li>
 							<li class="garage-list__item img-width-584"><img class="about__img"
-									data-src="@img/about/about-park-4-584.jpg" alt="грузовая машина ЕС Транс" width="584"
+									src="@img/about/about-park-4-584.jpg" alt="грузовая машина ЕС Транс" width="584"
 									height="400">
 							</li>
 						</ul>
@@ -471,11 +471,9 @@
 							<img data-src="@img/swipe-left/hand-swipe.gif" width="70" height="35" alt="иконка руки">
 						</div>
 					</div>
-					<!-- Оболочка слайдера -->
 					<div class="reviews__slider swiper margin-bottom-50">
-						<!-- Двигающееся часть слайдера -->
 						<div class="swiper__wrapper swiper-wrapper">
-							<!-- Слайд -->
+
 							<div class="swiper__slide swiper-slide">
 								<div class="swiper__content">
 									<p class="swiper__text margin-bottom-10">Работаю в «ЕС Трансе» почти с её создания. Ценю
@@ -539,11 +537,7 @@
 											"ЕС Транс".</strong></p>
 								</div>
 							</div>
-
 						</div>
-						<!-- Если нужна пагинация -->
-						<!-- <div class="swiper-pagination"></div> -->
-						<!-- Если нужна навигация (влево/вправо) -->
 						<button type="button" class="swiper-button-prev"></button>
 						<button type="button" class="swiper-button-next"></button>
 					</div>
